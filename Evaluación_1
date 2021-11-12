@@ -1,13 +1,11 @@
-var num1 = {
-	num: 30
-}
+var num1 = 30;
+num3=prompt('Ingrese un número');
 
-var num2 = {
-	num: 28
-}
+var num2 = 28;
+num3=prompt('Ingrese otro número');
 
 var num3 ;
-num3=prompt('Ingrese la opcion que desee','');
+num3=prompt('Ingrese la opcion que desee.(numero del 1 al 7)');
 
 console.log ( `Para sumar escriba 1 ` );
 console.log ( `Para restar escriba 2` );
@@ -18,38 +16,39 @@ console.log ( `Para tener la formula general escriba 6 ` );
 console.log ( `Para sacar el binomio cuadrado perfecto escriba 7 ` );
 
 function printt(num3){
-	console.log( `Su resultado es: ` );
+	console.log( `Su resultado aparece a continuación. ` );
 
-	if (num3 === 1){
-		num4 = num1+num2
-		console.log( '${num4}');
+
+	if (num3 == 1){
+		var num4 = num1 + num2;
+		console.log(`La sumatoria de los numeros fue ${num4}`);
 	}
 
-	if (num3 === 2){
-		num4 = num1-num2
-		console.log( '${num4}');
+	if (num3 == 2){
+		var num4 = num1-num2;
+		console.log(`La resta de los números fue ${num4}`);
 	}
-	if (num3 === 3){
-		nnum4 = num1*num2
-		console.log( '${num4}');
+	if (num3 == 3){
+		var num4 = num1*num2;
+		console.log(`La multiplicación de los números fue ${num4}`);
 	}
-	if (num3 === 4){
-		num4 = num1/num2
-		console.log( '${num4}');
+	if (num3 == 4){
+		var num4 = num1/num2;
+		console.log(`La división de los números fue ${num4}`);
 	}
-	if (num3 === 5){
-		num4 = num1
-		num5 = num2
-		console.log( '${num4} y ${num5}');
+	if (num3 == 5){
+		var num4 = num1;
+		var num5 = num2;
+		console.log(`La raiz cuadrada fue ${num4} y ${num5}`);
 	}
-	if (num3 === 6){
-		num4 = -num2+  (num2*num2) - (4*num1*1)
-		num5 = num4/ (2*num1)
-		console.log( '${num5}');
+	if (num3 == 6){
+		var num4 = -num2+  (num2*num2) - (4*num1*1);
+		var num5 = num4/ (2*num1);
+		console.log(`La formula general fue ${num5}`);
 	}
-	if (num3 === 7){
-		num4 = (num1*num1) + (2*num1*num2) + (num2*num2)
-		console.log( '${num4}');
+	if (num3 == 7){
+		var num4 = (num1*num1) + (2*num1*num2) + (num2*num2);
+		console.log(`El binomio cuadrado de los numeros fue ${num4}`);
 	}
 }
 printt(num3);
